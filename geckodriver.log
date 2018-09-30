@@ -1,0 +1,293 @@
+1538294223934	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.QWg84jzEHbE6"
+1538294225038	Marionette	INFO	Enabled via --marionette
+2018-09-30 13:27:06.324 plugin-container[6840:80067] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8403, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538294226988	Marionette	INFO	Listening on port 50637
+1538294227058	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 13:27:07.535 plugin-container[6841:80149] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538294420125	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.1ZSfnP0kH2ku"
+1538294420696	Marionette	INFO	Enabled via --marionette
+2018-09-30 13:30:21.701 plugin-container[6911:82280] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d0b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538294422078	Marionette	INFO	Listening on port 50860
+1538294422088	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 13:30:22.725 plugin-container[6912:82359] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8103, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538305889196	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.Ny1WpMM0vXR6"
+1538305890482	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:41:32.703 plugin-container[515:5594] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538305893770	Marionette	INFO	Listening on port 49300
+1538305893830	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:41:34.723 plugin-container[516:5721] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8607, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306220253	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.FNT9X7GVE6FZ"
+1538306220836	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:47:01.892 plugin-container[610:9417] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x833f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306222330	Marionette	INFO	Listening on port 49526
+1538306222414	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:47:02.835 plugin-container[611:9489] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306256559	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.T2P2pJlAUQwD"
+1538306257114	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:47:38.247 plugin-container[621:9969] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306258754	Marionette	INFO	Listening on port 49658
+1538306258834	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:47:39.344 plugin-container[624:10093] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306296225	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.75JXLpnfMv2C"
+1538306296820	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:48:17.862 plugin-container[635:10502] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306298246	Marionette	INFO	Listening on port 49760
+1538306298310	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:48:18.854 plugin-container[636:10579] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306381679	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.NJSAMhal7LCS"
+1538306382208	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:49:43.238 plugin-container[646:11470] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306383636	Marionette	INFO	Listening on port 49869
+1538306383730	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:49:44.267 plugin-container[647:11554] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306527567	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.VONLQpkCiM4u"
+1538306528098	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:52:09.120 plugin-container[677:12643] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x863f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306529512	Marionette	INFO	Listening on port 49990
+1538306529518	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:52:10.129 plugin-container[678:12721] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 677, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 677, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 677, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 677, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x510027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306579612	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.6Gxh1wCwqeTJ"
+1538306580138	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:53:01.187 plugin-container[698:13277] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x823f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306581610	Marionette	INFO	Listening on port 50112
+1538306581670	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:53:02.175 plugin-container[699:13367] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7643, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C00AF,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C00AF,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C00AF,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306901056	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.C1DVLly1NAXA"
+1538306901594	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:58:22.669 plugin-container[771:16417] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306903102	Marionette	INFO	Listening on port 50541
+1538306903112	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:58:23.682 plugin-container[772:16494] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7807, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538306974477	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.l5wOKyUwZYLw"
+1538306975028	Marionette	INFO	Enabled via --marionette
+2018-09-30 16:59:36.082 plugin-container[787:17409] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x843f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538306976468	Marionette	INFO	Listening on port 50787
+1538306976548	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 16:59:37.030 plugin-container[788:17491] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x823f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538307069895	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.omHzJ3LpNKOl"
+1538307070422	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:01:11.495 plugin-container[799:18368] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538307071912	Marionette	INFO	Listening on port 50914
+1538307071970	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:01:12.445 plugin-container[800:18442] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 799, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 799, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 799, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 799, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 799, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538307211268	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.46jJSCWHToqc"
+1538307211822	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:03:32.885 plugin-container[816:19607] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x873f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538307213326	Marionette	INFO	Listening on port 51041
+1538307213424	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:03:33.834 plugin-container[817:19685] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538307245621	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.K3J2sOL3n8jS"
+1538307246168	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:04:07.329 plugin-container[826:20144] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538307247826	Marionette	INFO	Listening on port 51162
+1538307247894	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:04:08.330 plugin-container[827:20218] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x723f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538307761811	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.HTAtR1R4X3Rm"
+1538307762358	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:12:43.657 plugin-container[912:24498] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538307764082	Marionette	INFO	Listening on port 52587
+1538307764174	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:12:44.729 plugin-container[913:24580] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7847, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538307790330	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.pOWdFTEyZwWA"
+1538307790892	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:13:12.015 plugin-container[922:25036] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538307792462	Marionette	INFO	Listening on port 52796
+1538307792502	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:13:13.057 plugin-container[923:25112] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538307830683	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.qHMeZZ0wEv7o"
+1538307831240	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:13:52.365 plugin-container[931:25659] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7403, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538307832792	Marionette	INFO	Listening on port 52912
+1538307832852	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:13:53.384 plugin-container[932:25731] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538307911096	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.Cu0Dnb0EOZ5s"
+1538307911660	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:15:12.700 plugin-container[947:26636] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538307913086	Marionette	INFO	Listening on port 53100
+1538307913154	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:15:13.674 plugin-container[948:26715] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8303, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538310151058	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.2TOCckfdGH6J"
+1538310151652	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:52:32.681 plugin-container[973:28901] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8503, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538310153068	Marionette	INFO	Listening on port 53274
+1538310153134	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:52:33.663 plugin-container[974:28986] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://homestays.makemytrip.com/dist/hs-prefetcher.js, line 1: SyntaxError: expected expression, got '<'
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538310401607	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.9vyfpzkZBxDO"
+1538310402164	Marionette	INFO	Enabled via --marionette
+2018-09-30 17:56:43.144 plugin-container[1006:30984] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7d3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538310403534	Marionette	INFO	Listening on port 53429
+1538310403562	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 17:56:44.164 plugin-container[1007:31060] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1538311048320	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ys/vftc5p1n2y92n4tgnwhh44yc0000gn/T/rust_mozprofile.ssWnw0uZXvB5"
+1538311048890	Marionette	INFO	Enabled via --marionette
+2018-09-30 18:07:29.928 plugin-container[1052:34815] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x803f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1538311050364	Marionette	INFO	Listening on port 56006
+1538311050378	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-30 18:07:30.902 plugin-container[1053:34893] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8903, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

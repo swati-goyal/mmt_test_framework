@@ -1,0 +1,43 @@
+# https://www.makemytrip.com/
+
+from selenium.webdriver import Chrome, Firefox
+from selenium.webdriver.common import desired_capabilities
+from selenium.common import exceptions
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+import unittest
+import json
+import time
+
+
+class MMTBookingTest(unittest.TestCase):
+    # driver = Chrome('/Users/swati/Documents/webdrivers/chromedriver.exe')
+    driver = Firefox()
+    url = 'https://www.makemytrip.com/'
+
+    def setUp(self):
+        self.driver.get(self.url)
+        self.driver.implicitly_wait(30)
+
+    def read_json(self):
+        with open('xpath') as f:
+            data = json.load(f)
+        return data
+
+    def test_booking(self):
+        data = self.read_json()
+        source = self.driver.find_elements_by_xpath(data["home_page"]["source_list"])
+        print([o.text for o in source])
+        # source.send_keys("Bangalore (BLR)")
+        # destination = self.driver.find_element_by_xpath(data["home_page"]["destination"])
+        # destination.send_keys("New Delhi (DEL)")
+        # self.driver.find_element_by_xpath(data["home_page"]["search"]).click()
+        time.sleep(10)
+        self.assertIsNotNone(self, self.driver.title)
+
+    def tearDown(self):
+        self.driver.quit()
+
+
+if __name__ == '__main__':
+    unittest.main()
