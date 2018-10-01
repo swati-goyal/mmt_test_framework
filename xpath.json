@@ -1,0 +1,19 @@
+{"home_page":
+  {
+    "source": "//*[@id='hp-widget__sfrom']",
+    "source_city":"//li[contains(text(), 'Bangalore')]",
+    "destination": "//*[@id='hp-widget__sTo']",
+    "destination_city":"//li[contains(text(), 'Delhi')]",
+    "depart" : "//*[contains(@id, 'hp-widget__depart')]",
+    "depart_date": "//*[contains(@class,' ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today')]/a",
+    "return" : "//*[contains(@id, 'hp-widget__return')]",
+    "return_date": "//*[@class='dateFilterReturn hasDatepicker']/div/div[1]/table/tbody/tr[1]/td[2]/a",
+    "search": "//*[@id='searchBtn']",
+    "calendar": "//*[@class='dateFilter hasDatepicker']"
+  },
+
+  "flight_page":
+  {
+    "":""
+  }
+}

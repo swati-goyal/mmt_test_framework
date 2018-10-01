@@ -1,0 +1,8 @@
+# https://www.makemytrip.com/
+"depart_date":"//*[@class='dateFilter hasDatepicker']/div/div[1]/table/tbody/tr[1]/td[1]",
+"depart_date_field":"//*[contains(@id, 'hp-widget__depart')]",
+"return_date_field":"//*[contains(@id, 'hp-widget__return')]",
+"return_date": "//*[@class='dateFilterReturn hasDatepicker']/div/div[1]/table/tbody/tr[1]/td[2]/a",
+"return" : "//*[contains(@class, 'inputM inputHlp inputDateFilter')]",
+
+mmt date format = "%d %b, %a"
