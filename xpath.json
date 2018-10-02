@@ -3,17 +3,18 @@
     "source": "//*[@id='hp-widget__sfrom']",
     "source_city":"//li[contains(text(), 'Bangalore')]",
     "destination": "//*[@id='hp-widget__sTo']",
-    "destination_city":"//li[contains(text(), 'Delhi')]",
+    "destination_city":"//li[contains(text(), 'New Delhi')]",
     "depart" : "//*[contains(@id, 'hp-widget__depart')]",
     "depart_date": "//*[contains(@class,' ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today')]/a",
     "return" : "//*[contains(@id, 'hp-widget__return')]",
-    "return_date": "//*[@class='dateFilterReturn hasDatepicker']/div/div[1]/table/tbody/tr[1]/td[2]/a",
+    "return_date": "//table[@class='ui-datepicker-calendar']/tbody/tr[1]/td[{}]/a",
     "search": "//*[@id='searchBtn']",
     "calendar": "//*[@class='dateFilter hasDatepicker']"
   },
 
   "flight_page":
   {
-    "":""
+    "cheapest_tag":"//a[@class='stk_btm_chpFlight active']",
+    "book_flight":"//a[@class='btn btn-lg pull-right btn-primary-red']"
   }
 }

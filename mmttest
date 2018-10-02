@@ -1,113 +1,137 @@
 #!/usr/bin/python3
 
-
-from selenium.webdriver import Chrome, Firefox
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from dateutil.relativedelta import relativedelta
-from selenium.common import exceptions
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
-from selenium import webdriver
-from selenium.webdriver.support.ui import Select
 import unittest
 import json
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
+from selenium.webdriver import Chrome, Firefox
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common import exceptions
+from selenium.webdriver.common.by import By
 
 
 class MMTBookingTest(unittest.TestCase):
-    driver = Chrome('/usr/local/bin/chromedriver')
-    # driver = Firefox()
+    # driver = Chrome('/Users/swati/Documents/webdrivers/chromedriver.exe')
+    driver = Firefox()
     url = 'https://www.makemytrip.com/'
 
     def setUp(self):
+        """
+        :Description: Sets up the driver instance  and open the url to run the automation test script, if unable to
+        maximize screen, throws and catches an exception.
+        """
         self.driver.get(self.url)
         try:
             self.driver.maximize_window()
         except Exception as e:
-            print("Unable to maximize window")
+            print("Unable to maximize window because: ({})".format(e))
         self.driver.implicitly_wait(2)
 
+    @property
     def read_json(self):
+        """
+        :Description: Reads the file xpath.json and loads the data into 'f'
+        :return: Json data containing xpaths
+        """
         with open('xpath.json') as f:
             data = json.load(f)
         return data
 
     def test_booking(self):
-        data = self.read_json()
-        wait = WebDriverWait(self.driver, 2)
+        """
+        :Description: The test script written below selects desired source and destination cities, selects departure
+        date as today and return date as next date, clicks on search button to get a list of flights. From flights'
+        listing, program looks at cheapest flights and clicks on "Book" button to take the driver to the final booking
+        page, captures the final screen-shot.
+        :Note: Please reach out to "swati_goyal@outlook.com" in case of any queries.
+        """
+        # Get the xpaths, initialize wait, current_date and next_date in desired pattern
+        driver = self.driver
+        data = self.read_json
+        wait = WebDriverWait(driver, 10)
         current_date = datetime.now().strftime("%d")
-        next_date = (datetime.now() + relativedelta(day=2)).strftime("%d")
+        next_date = (datetime.now() + timedelta(1)).strftime("%d")
 
         # Select source city
-        source = self.driver.find_element_by_xpath(data["home_page"]["source"])
-        self.driver.execute_script("arguments[0].scrollIntoView();", source)
+        source = driver.find_element_by_xpath(data["home_page"]["source"])
+        driver.execute_script("arguments[0].scrollIntoView();", source)
         source.clear()
-        time.sleep(2)
-        source.send_keys("Bang")
+        time.sleep(3)
+        source.send_keys("Ban")
+
         try:
-            self.driver.find_element_by_xpath(data["home_page"]["source_city"]).click()
-            self.driver.implicitly_wait(5)
+            driver.find_element_by_xpath(data["home_page"]["source_city"]).click()
+            driver.implicitly_wait(2)
+            driver.switch_to.default_content()
         except exceptions.NoSuchElementException:
             print("Invalid Xpath for Source")
 
         # Select destination city
-        destination = self.driver.find_element_by_xpath(data["home_page"]["destination"])
-        self.driver.execute_script("arguments[0].scrollIntoView();", destination)
+        destination = driver.find_element_by_xpath(data["home_page"]["destination"])
+        driver.execute_script("arguments[0].scrollIntoView();", destination)
         destination.clear()
-        time.sleep(2)
-        destination.send_keys("Delh")
+        time.sleep(3)
+        destination.send_keys("New")
+
         try:
-            self.driver.find_element_by_xpath(data["home_page"]["destination_city"]).click()
-            self.driver.implicitly_wait(5)
+            driver.find_element_by_xpath(data["home_page"]["destination_city"]).click()
+            driver.implicitly_wait(2)
         except exceptions.NoSuchElementException:
             print("Invalid Xpath for Destination")
 
-        self.driver.find_element_by_xpath("//*[@id='js-switch__option']/div[2]").click()
+        # Select "Roundtrip" option from top options
+        driver.find_element_by_xpath("//*[@id='js-switch__option']/div[2]").click()
 
-        # Select departure and return date
         try:
-            # wait.until(EC.visibility_of_element_located, (By.XPATH, data["home_page"]["depart"]))
-            self.driver.find_element_by_xpath(data["home_page"]["depart"]).click()
-            depart_dates = self.driver.find_elements_by_xpath(data["home_page"]["depart_date"])
-            for date in depart_dates:
-                if date.is_enabled() and date.is_displayed() and str(date.get_attribute("text")) == current_date:
-                    date.click()
-                    self.driver.implicitly_wait(2)
+            driver.find_element_by_xpath(data["home_page"]["depart"]).click()
+            driver.implicitly_wait(1)
+            driver.find_element(By.XPATH, data["home_page"]["calendar"])
+            ddate = driver.find_element_by_xpath(data["home_page"]["depart_date"])
+            if ddate.is_enabled(): ddate.click()
 
         except exceptions.NoSuchElementException or exceptions.ElementNotVisibleException:
-            print("Date is not selected")
+            print("Departure date is not selected")
 
         try:
-            return_field = self.driver.find_element_by_xpath(data["home_page"]["return"])
+            return_field = driver.find_element_by_xpath(data["home_page"]["return"])
             # self.driver.execute_script('document.getElementById("hp-widget__return").removeAttribute("readonly")')
-            self.driver.implicitly_wait(1)
             return_field.click()
-            rdate = wait.until(EC.element_to_be_clickable((By.XPATH, data["home_page"]["return_date"])))
-            if rdate.is_enabled() and rdate.is_displayed() and str(rdate.get_attribute("text")) == next_date:
-                ActionChains(self.driver).move_to_element(rdate).perform()
-                rdate.click()
-
-            '''
-            return_dates = self.driver.find_elements_by_xpath(data["home_page"]["return_date"])
-            for date in return_dates:
-                if date.is_enabled() and date.is_displayed() and str(date.get_attribute("text")) == next_date:
-                    date.click()
-                    self.driver.implicitly_wait(2)
-            '''
+            driver.implicitly_wait(2)
+            tomorrow = (data["home_page"]["return_date"]).format(next_date.strip('0'))
+            return_date = driver.find_elements_by_xpath(tomorrow)
+            for i in return_date:
+                if i.text == next_date.lstrip('0'):
+                    i.click()
 
         except exceptions.NoSuchElementException or exceptions.ElementNotVisibleException:
-            print("Date is not selected")
+            print("Return date is not selected")
 
         # Click on search button to go the Flight selection page
-        self.driver.find_element_by_xpath(data["home_page"]["search"]).click()
+        try:
+            driver.find_element_by_xpath(data["home_page"]["search"]).click()
+        except exceptions.NoSuchElementException:
+            print("Unable to locate search button")
 
-        self.assertIsNotNone(self, self.driver.title)
+        wait.until(EC.title_contains("Flight Split"))
+        try:
+            data1 = data["flight_page"]["cheapest_tag"]
+            cheapest_flight = wait.until(EC.element_to_be_clickable((By.XPATH, data1)))
+            if cheapest_flight is not None:
+                data2 = data["flight_page"]["book_flight"]
+                book_flight = wait.until(EC.element_to_be_clickable((By.XPATH, data2)))
+                book_flight.click()
+                driver.get_screenshot_as_file("final_booking_page.png")
+                print("Test completed successfully, please check the screenshot in the current directory!")
+
+        except Exception as e:
+            print("Unable to book flight because: ({})".format(e))
 
     def tearDown(self):
-        pass
-        #self.driver.quit()
+        """
+        :Description: Quits the web-driver instance
+        """
+        self.driver.quit()
 
 
 if __name__ == '__main__':

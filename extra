@@ -6,3 +6,5 @@
 "return" : "//*[contains(@class, 'inputM inputHlp inputDateFilter')]",
 
 mmt date format = "%d %b, %a"
+
+/html/body/div[2]/div[3]/div[3]/div/div[4]/div/div[1]/table/tbody/tr[1]/td[3]
