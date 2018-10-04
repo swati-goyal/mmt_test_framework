@@ -3,7 +3,7 @@
     "source": "//*[@id='hp-widget__sfrom']",
     "source_city":"//li[contains(text(), 'Bangalore')]",
     "destination": "//*[@id='hp-widget__sTo']",
-    "destination_city":"//li[contains(text(), 'Delhi')]",
+    "destination_city":"//li[aria-label='Search Result : Delhi, India' and @class='ui-menu-item']",
     "depart" : "//*[contains(@id, 'hp-widget__depart')]",
     "depart_date": "//*[contains(@class,' ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today')]/a",
     "return" : "//*[contains(@id, 'hp-widget__return')]",
