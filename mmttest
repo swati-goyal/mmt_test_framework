@@ -12,8 +12,8 @@ from selenium.webdriver.common.by import By
 
 
 class MMTBookingTest(unittest.TestCase):
-    driver = Chrome('/usr/local/bin/chromedriver')
-    # driver = Firefox()
+    # driver = Chrome('/usr/local/bin/chromedriver')
+    driver = Firefox()
     url = 'https://www.makemytrip.com/'
 
     def setUp(self):
@@ -50,37 +50,32 @@ class MMTBookingTest(unittest.TestCase):
         driver = self.driver
         data = self.read_json
         wait = WebDriverWait(driver, 10)
-        attempts = 0
         # current_date = datetime.now().strftime("%d")
         next_date = (datetime.now() + timedelta(1)).strftime("%d")
         month = (datetime.now() + timedelta(1)).strftime("%m")
 
-        # Select "Roundtrip" option from top options
+        # Select "Round-trip" option from top options
         driver.find_element_by_xpath("//*[@id='js-switch__option']/div[2]").click()
 
         # Select source city
-        source = driver.find_element_by_xpath(data["home_page"]["source"])
-        driver.execute_script("arguments[0].scrollIntoView();", source)
-        source.clear()
-        source.send_keys("Bangalore")
-
         try:
-            driver.implicitly_wait(2)
-            driver.find_element_by_xpath(data["home_page"]["source_city"]).click()
+            source = driver.find_element_by_xpath(data["home_page"]["source"])
+            driver.execute_script("arguments[0].scrollIntoView();", source)
+            source.clear()
+            source.send_keys("Bangalore")
+            # driver.find_element_by_xpath(data["home_page"]["source_city"]).click()
             time.sleep(1)
 
         except Exception as e:
             print("Unable to select valid source because: ({})".format(e))
 
         # Select destination city
-        destination = driver.find_element_by_xpath(data["home_page"]["destination"])
-        driver.execute_script("arguments[0].scrollIntoView();", destination)
-        destination.clear()
-        destination.send_keys("New Delhi")
-
         try:
-            driver.implicitly_wait(2)
-            driver.find_element_by_xpath(data["home_page"]["destination_city"]).click()
+            destination = driver.find_element_by_xpath(data["home_page"]["destination"])
+            driver.execute_script("arguments[0].scrollIntoView();", destination)
+            destination.clear()
+            destination.send_keys("New Delhi")
+            # driver.find_element_by_xpath(data["home_page"]["destination_city"]).click()
             time.sleep(1)
 
         except Exception as e:
@@ -91,8 +86,8 @@ class MMTBookingTest(unittest.TestCase):
             driver.find_element_by_xpath(data["home_page"]["depart"]).click()
             driver.implicitly_wait(1)
             driver.find_element(By.XPATH, data["home_page"]["calendar"])
-            ddate = driver.find_element_by_xpath(data["home_page"]["depart_date"])
-            if ddate.is_displayed(): ddate.click()
+            d_date = driver.find_element_by_xpath(data["home_page"]["depart_date"])
+            if d_date.is_displayed(): d_date.click()
 
         except exceptions.NoSuchElementException or exceptions.ElementNotVisibleException:
             print("Departure date is not selected")
