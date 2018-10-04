@@ -12,8 +12,8 @@ from selenium.webdriver.common.by import By
 
 
 class MMTBookingTest(unittest.TestCase):
-    # driver = Chrome('/Users/swati/Documents/webdrivers/chromedriver.exe')
-    driver = Firefox()
+    driver = Chrome('/usr/local/bin/chromedriver')
+    # driver = Firefox()
     url = 'https://www.makemytrip.com/'
 
     def setUp(self):
@@ -50,58 +50,65 @@ class MMTBookingTest(unittest.TestCase):
         driver = self.driver
         data = self.read_json
         wait = WebDriverWait(driver, 10)
-        current_date = datetime.now().strftime("%d")
+        attempts = 0
+        # current_date = datetime.now().strftime("%d")
         next_date = (datetime.now() + timedelta(1)).strftime("%d")
+        month = (datetime.now() + timedelta(1)).strftime("%m")
+
+        # Select "Roundtrip" option from top options
+        driver.find_element_by_xpath("//*[@id='js-switch__option']/div[2]").click()
 
         # Select source city
         source = driver.find_element_by_xpath(data["home_page"]["source"])
         driver.execute_script("arguments[0].scrollIntoView();", source)
         source.clear()
-        time.sleep(3)
-        source.send_keys("Ban")
+        source.send_keys("Bangalore")
 
         try:
-            driver.find_element_by_xpath(data["home_page"]["source_city"]).click()
             driver.implicitly_wait(2)
-            driver.switch_to.default_content()
-        except exceptions.NoSuchElementException:
-            print("Invalid Xpath for Source")
+            driver.find_element_by_xpath(data["home_page"]["source_city"]).click()
+            time.sleep(1)
+
+        except Exception as e:
+            print("Unable to select valid source because: ({})".format(e))
 
         # Select destination city
         destination = driver.find_element_by_xpath(data["home_page"]["destination"])
         driver.execute_script("arguments[0].scrollIntoView();", destination)
         destination.clear()
-        time.sleep(3)
-        destination.send_keys("New")
+        destination.send_keys("New Delhi")
 
         try:
-            driver.find_element_by_xpath(data["home_page"]["destination_city"]).click()
             driver.implicitly_wait(2)
-        except exceptions.NoSuchElementException:
-            print("Invalid Xpath for Destination")
+            driver.find_element_by_xpath(data["home_page"]["destination_city"]).click()
+            time.sleep(1)
 
-        # Select "Roundtrip" option from top options
-        driver.find_element_by_xpath("//*[@id='js-switch__option']/div[2]").click()
+        except Exception as e:
+            print("Unable to select valid destination because: ({})".format(e))
 
+        # Departure Date
         try:
             driver.find_element_by_xpath(data["home_page"]["depart"]).click()
             driver.implicitly_wait(1)
             driver.find_element(By.XPATH, data["home_page"]["calendar"])
             ddate = driver.find_element_by_xpath(data["home_page"]["depart_date"])
-            if ddate.is_enabled(): ddate.click()
+            if ddate.is_displayed(): ddate.click()
 
         except exceptions.NoSuchElementException or exceptions.ElementNotVisibleException:
             print("Departure date is not selected")
 
+        # Return Date
         try:
             return_field = driver.find_element_by_xpath(data["home_page"]["return"])
             # self.driver.execute_script('document.getElementById("hp-widget__return").removeAttribute("readonly")')
             return_field.click()
             driver.implicitly_wait(2)
-            tomorrow = (data["home_page"]["return_date"]).format(next_date.strip('0'))
-            return_date = driver.find_elements_by_xpath(tomorrow)
+            tomorrow = (data["home_page"]["return_date"]).format(next_date.strip('0'), str(int(month.lstrip('0')) - 1))
+            # print(tomorrow)
+            return_date = wait.until(EC.presence_of_all_elements_located((By.XPATH, tomorrow)))
             for i in return_date:
                 if i.text == next_date.lstrip('0'):
+                    # print(i.text)
                     i.click()
 
         except exceptions.NoSuchElementException or exceptions.ElementNotVisibleException:
